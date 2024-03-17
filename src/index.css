@@ -1,13 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", sans-serif; /* Set Roboto as the default font */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(2, 8, 19, 1) 35%,
+    rgba(9, 37, 80, 1) 100%
+  );
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Custom styling for ul and li */
+ul {
+  list-style-type: disc; /* or any other style you prefer */
+  padding-left: 4rem; /* Adjust padding to suit your design */
+}
+
+li {
+  margin-bottom: 0.5rem; /* Space between list items */
+}
+
+/* Roboto font-weight and style classes (Optional) */
+.roboto-thin {
+  font-weight: 100;
+}
+.roboto-light {
+  font-weight: 300;
+}
+.roboto-regular {
+  font-weight: 400;
+}
+.roboto-medium {
+  font-weight: 500;
+}
+.roboto-bold {
+  font-weight: 700;
+}
+.roboto-black {
+  font-weight: 900;
+}
+
+.roboto-thin-italic {
+  font-weight: 100;
+  font-style: italic;
+}
+.roboto-light-italic {
+  font-weight: 300;
+  font-style: italic;
+}
+.roboto-regular-italic {
+  font-weight: 400;
+  font-style: italic;
+}
+.roboto-medium-italic {
+  font-weight: 500;
+  font-style: italic;
+}
+.roboto-bold-italic {
+  font-weight: 700;
+  font-style: italic;
+}
+.roboto-black-italic {
+  font-weight: 900;
+  font-style: italic;
 }
